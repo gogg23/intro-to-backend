@@ -12,7 +12,5 @@ const startServer = async () => {
       console.log("ERROR", error);
       throw error;
     });
-
-    app.listen(process.env.PORT, () => {}
   } catch (error) {}
 };

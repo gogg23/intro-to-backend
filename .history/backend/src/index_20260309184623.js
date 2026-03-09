@@ -7,12 +7,15 @@ dotenv.config({
 
 const startServer = async () => {
   try {
-    await connectDB();
-    app.on("error", (error) => {
-      console.log("ERROR", error);
-      throw error;
-    });
+    await connectDB (
+        app.on("error", error) => 
 
-    app.listen(process.env.PORT, () => {}
+
+
+
+
+
+            
+    );
   } catch (error) {}
 };
