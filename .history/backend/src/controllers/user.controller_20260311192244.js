@@ -25,7 +25,7 @@ const registerUser = async (req, res) => {
       loggedIn: false,
     });
     res.status(201).json({ message: 'user registered' });
-    user:{user: user._id, email: user.email, username: user.username}
+    user:{user._}
   } catch (error) {
     res.status(500).json({ message: 'Internal server error', error: error.message });
   }
