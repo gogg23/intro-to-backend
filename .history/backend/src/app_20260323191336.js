@@ -1,4 +1,3 @@
-import userRouter from './routes/user.route.js';
 import express from 'express';
 
 const app = express(); //create an express app

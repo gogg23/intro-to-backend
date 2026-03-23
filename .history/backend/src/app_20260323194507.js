@@ -1,4 +1,4 @@
-import userRouter from './routes/user.route.js';
+import userRouter from './routes/user.routes.js'; // adjust path if needed
 import express from 'express';
 
 const app = express(); //create an express app
