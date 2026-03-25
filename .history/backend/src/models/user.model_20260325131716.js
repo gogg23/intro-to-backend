@@ -1,0 +1,39 @@
+import mongoose, { Schema } from 'mongoose';
+import bcrypt from 'bcrypt';
+
+const userSchema = new Schema(
+  {
+    username: {
+      type: String,
+      required: true,
+      unique: true,
+      lowercase: true,
+      trim: true,
+      minLength: 1,
+      maxLength: 30,
+    },
+    password: {
+      type: String,
+      required: true,
+      minLength: 6,
+      maxLength: 50,
+    },
+    email: {
+      type: String,
+      required: true,
+      unique: true,
+      lowercase: true,
+      trim: true,
+    },
+  },
+  {
+    timestamps: true, // <-- moved here
+  }
+);
+
+//before saving any passwords we need to hash it
+U
+
+const User = mongoose.model('User', userSchema);
+
+export default User;
