@@ -28,7 +28,7 @@ const userSchema = new Schema(
   },
   {
     timestamps: true, // <-- moved here
-  },
+  }
 );
 
 //before saving any passwords we need to hash it
@@ -41,7 +41,7 @@ userSchema.pre('save', async function (next) {
 //compare passwords
 userSchema.methods.comparePasswords = async function (password) {
   return bcrypt.compare(password, this.password);
-};
+}
 
 const User = mongoose.model('User', userSchema);
 
