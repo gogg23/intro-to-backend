@@ -61,7 +61,7 @@ const loginUser = async (req, res) => {
   }
 };
 
-const logoutuser = async (req, res) => {
+const logoutUser = async (req, res) => {
   try {
     const { email } = req.body;
     const user = await User.findOne({ email });
@@ -80,4 +80,4 @@ const logoutuser = async (req, res) => {
   }
 };
 
-export { registerUser, loginUser, logoutuser };
+export { registerUser, loginUser, logoutUser };

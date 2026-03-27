@@ -80,4 +80,4 @@ const logoutuser = async (req, res) => {
   }
 };
 
-export { registerUser, loginUser, logoutuser };
+export { registerUser, loginUser, };
