@@ -16,8 +16,6 @@ const postSchema = new Schema(
         age: {
             type: Number,
             required: true,
-            min: 1,
-            max: 150,
         }
     },
     {

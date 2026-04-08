@@ -7,22 +7,14 @@ const postSchema = new Schema(
             required: true,
             trim: true,
     },
-    description: {
-        type: String,
-        required: true, 
-        trim: true,
-    },
-
-        age: {
-            type: Number,
-            required: true,
-            min: 1,
-            max: 150,
-        }
-    },
-    {
+         description: {
+            type: String,
+            required: true, 
+            trim: true,
+    {,
         timestamps: true,
     }
+
 )
 
 export default mongoose.model('Post', postSchema);
